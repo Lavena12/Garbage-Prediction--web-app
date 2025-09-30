@@ -3,7 +3,7 @@ import joblib
 import streamlit as st
 
 # Load the model using joblib
-loaded_model = joblib.load("train_model.sav")  # Relative path
+loaded_model = joblib.load("train_model.joblib")  # Relative path
 
 # Function for prediction
 def garbage_prediction(input_data):
@@ -27,3 +27,4 @@ def main():
         
 if __name__ == '__main__':
     main()
+
